@@ -19,11 +19,17 @@
 </head>
 
 <body>
-    <img src="assets/img/background(1).jpg" class="img-fluid" alt="...">
+    <div class="d-flex justify-content-center" style="width: 100%;">
+        <img src="assets/img/background.jpg"  style="width: 100%; height: 90vh; object-fit: cover;">
+    </div>
 
     <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="#">Logo</a>
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-chevron-left"></i>
+                Iann Braga
+                <i class="bi bi-chevron-right"></i>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -34,7 +40,10 @@
                         <a class="nav-link" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sobre</a>
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skill's</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Porfolio</a>
@@ -49,27 +58,17 @@
         <div class="row">
             <div class="col-md-6">
                 <div>
-                    <h2 class="mb-4">Sobre Mim</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pretium, quam vitae finibus
-                        interdum, urna elit mollis lectus, et cursus libero urna ac dolor. In rhoncus elementum orci,
-                        nec interdum mi feugiat at. Fusce nec ipsum nec risus consequat laoreet a eget neque.</p>
+                    <h2 class="mb-4" id="sobre">Sobre Mim</h2>
+                    <p>Meu nome é Iann!! Atulamente estou no 6º período do curso Sistemas de Informação na Universidade Estadual do Tocantins - UNITINS, no período matutino e a tarde atuo como estagiário de desenvolvimento na Agência de Tecnologia da Informação - ATI. </p>
                     <h3 class="text-center">...</h3>
-                    <p>Etiam tempus est id urna lacinia, non varius sem rutrum. Quisque aliquet mi in erat gravida, sed
-                        aliquet ex varius. Aliquam ultrices consectetur est eget pellentesque. Nunc consequat, massa in
-                        suscipit ullamcorper, tortor purus vulputate velit, vel suscipit justo lacus id lacus.</p>
+                    <p>Durante a faculdade desenvolvi projetos principalmente a linguagem Java, de desenvolvimento web utilizando os frameworks Spring Boot e Quarkus, a desenvolvimento mobile utilizando Android Studio e Dart com o framework Flutter. Já no estágio fui apresentado a linguagem Ruby e o framework Ruby on Rails.</p>
                     <h3 class="text-center">...</h3>
-                    <p>Etiam tempus est id urna lacinia, non varius sem rutrum. Quisque aliquet mi in erat gravida, sed
-                        aliquet ex varius. Aliquam ultrices consectetur est eget pellentesque. Nunc consequat, massa in
-                        suscipit ullamcorper, tortor purus vulputate velit, vel suscipit justo lacus id lacus.</p>
                 </div>
 
                 <div class="social-icons mt-4 d-flex justify-content-center">
-                    <a href="#" class="social-icon me-3"><i class="bi bi-github"
-                            style="font-size: 2rem; color: black;"></i></a>
-                    <a href="#" class="social-icon me-3"><i class="bi bi-instagram"
-                            style="font-size: 2rem; color: black;"></i></a>
-                    <a href="#" class="social-icon me-3"><i class="bi bi-linkedin"
-                            style="font-size: 2rem; color: black;"></i></a>
+                    <a href="#" class="me-3"><i class="bi bi-github" style="font-size: 2rem; color: black;"></i></a>
+                    <a href="#" class="me-3"><i class="bi bi-instagram" style="font-size: 2rem; color: black;"></i></a>
+                    <a href="#" class="me-3"><i class="bi bi-linkedin" style="font-size: 2rem; color: black;"></i></a>
                 </div>
             </div>
             <div class="col-md-6">
@@ -78,40 +77,113 @@
         </div>
     </div>
 
-    <div class="container mt-5">
+    <div class="container mt-5 mb-4" id="skills">
         <h3 class="text-center py-5">Skill's</h3>
-        <div class="row">
+        <div class="row text-center">
+
             <div class="col-md-6">
-                <ul class="list-inline d-flex justify-content-center">
-                    <li class="list-inline-item">
-                        <i class="devicon-html5-plain align-middle" style="font-size: 3rem; color: black;"></i>
-                        <span class="ms-2 fw-bold" style="font-size: 18px;">HTML5</span>
-                    </li>
-                    <li class="list-inline-item">
-                        <i class="devicon-css3-plain align-middle" style="font-size: 3rem; color: black;"></i>
-                        <span class="ms-2 fw-bold" style="font-size: 18px;">CSS3</span>
-                    </li>
-                    <li class="list-inline-item">
-                        <i class="devicon-javascript-plain align-middle" style="font-size: 3rem; color: black;"></i>
-                        <span class="ms-2 fw-bold" style="font-size: 18px;">JavaScript</span>
-                    </li>
-                </ul>
+                <h3>Front-End</h3>
+                <div class="mt-3 mb-5 d-flex justify-content-center">
+                    <ul class="list-unstyled">
+                        <li><i class="devicon-html5-plain" style="font-size: 3rem; color: black;"></i></li>
+                        <li>HTML</li>
+                        <li>Básico</li>
+                    </ul>
+                    <div style="width: 20px;"></div>
+                    <ul class="list-unstyled">
+                        <li><i class=" devicon-css3-plain" style="font-size: 3rem; color: black;"></i></li>
+                        <li>CSS</li>
+                        <li>Básico</li>
+                    </ul>
+                    <div style="width: 20px;"></div>
+                    <ul class="list-unstyled">
+                        <li><i class=" devicon-javascript-plain" style="font-size: 3rem; color: black;"></i></li>
+                        <li>JavaScript</li>
+                        <li>Básico</li>
+                    </ul>
+                    <div style="width: 20px;"></div>
+                    <ul class="list-unstyled">
+                        <li><i class=" devicon-bootstrap-plain" style="font-size: 3rem; color: black;"></i></li>
+                        <li>Bootstrap</li>
+                        <li>Básico</li>
+                    </ul>
+                </div>
             </div>
             <div class="col-md-6">
-                <ul class="list-inline d-flex justify-content-center">
-                    <li class="list-inline-item">
-                        <i class="devicon-html5-plain align-middle" style="font-size: 3rem; color: black;"></i>
-                        <span class="ms-2 fw-bold" style="font-size: 18px;">HTML5</span>
-                    </li>
-                    <li class="list-inline-item">
-                        <i class="devicon-css3-plain align-middle" style="font-size: 3rem; color: black;"></i>
-                        <span class="ms-2 fw-bold" style="font-size: 18px;">CSS3</span>
-                    </li>
-                    <li class="list-inline-item">
-                        <i class="devicon-javascript-plain align-middle" style="font-size: 3rem; color: black;"></i>
-                        <span class="ms-2 fw-bold" style="font-size: 18px;">JavaScript</span>
-                    </li>
-                </ul>
+                <h3>Back-End</h3>
+                <div class="mt-3 mb-5 d-flex justify-content-center">
+                    <ul class="list-unstyled">
+                        <li><i class="devicon-java-plain" style="font-size: 3rem; color: black;"></i></li>
+                        <li>Java</li>
+                        <li>Básico</li>
+                    </ul>
+                    <div style="width: 20px;"></div>
+                    <ul class="list-unstyled">
+                        <li><i class=" devicon-spring-plain" style="font-size: 3rem; color: black;"></i></li>
+                        <li>Spring</li>
+                        <li>Básico</li>
+                    </ul>
+                    <div style="width: 20px;"></div>
+                    <ul class="list-unstyled">
+                        <li><i class=" devicon-ruby-plain" style="font-size: 3rem; color: black;"></i></li>
+                        <li>Ruby</li>
+                        <li>Básico</li>
+                    </ul>
+                    <div style="width: 20px;"></div>
+                    <ul class="list-unstyled">
+                        <li><i class=" devicon-rails-plain" style="font-size: 3rem; color: black;"></i></li>
+                        <li>Rails</li>
+                        <li>Básico</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h3>Database</h3>
+                <div class="mt-3 mb-5 d-flex justify-content-center">
+                    <ul class="list-unstyled">
+                        <li><i class="devicon-mysql-plain" style="font-size: 3rem; color: black;"></i></li>
+                        <li>MySQL</li>
+                        <li>Básico</li>
+                    </ul>
+                    <div style="width: 20px;"></div>
+                    <ul class="list-unstyled">
+                        <li><i class=" devicon-postgresql-plain" style="font-size: 3rem; color: black;"></i></li>
+                        <li>PostgreSQL</li>
+                        <li>Básico</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h3>SO</h3>
+                <div class="mt-3 mb-5 d-flex justify-content-center">
+                    <ul class="list-unstyled">
+                        <li><i class=" devicon-ubuntu-plain" style="font-size: 3rem; color: black;"></i></li>
+                        <li>Ubuntu</li>
+                        <li>Médio</li>
+                    </ul>
+                    <div style="width: 20px;"></div>
+                    <ul class="list-unstyled">
+                        <li><i class="devicon-windows8-plain" style="font-size: 3rem; color: black;"></i></li>
+                        <li>Windows</li>
+                        <li>Básico</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h3>DevOps</h3>
+                <div class="mt-3 mb-5 d-flex justify-content-center">
+                    <ul class="list-unstyled">
+                        <li><i class=" devicon-github-plain" style="font-size: 3rem; color: black;"></i></li>
+                        <li>GitHub</li>
+                        <li>Básico</li>
+                    </ul>
+                    <div style="width: 20px;"></div>
+                    <ul class="list-unstyled">
+                        <li><i class="devicon-docker-plain" style="font-size: 3rem; color: black;"></i></li>
+                        <li>Docker</li>
+                        <li>Básico</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
