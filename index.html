@@ -1,406 +1,71 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-bs-theme="dark">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Iann Braga</title>
-
-    <!-- Import CSS Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="assets/css/index.css">
-
-    <!-- Import Icons Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
-    <!-- Import Icons DevIcons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-
-    <!-- Import Font Google -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-
+    <title>Portfólio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
-<body class="bg-light theme-switch" style="font-family: Open Sans;">
-
-    <!-- Navbar -->
-    <header>
-        <nav class="navbar navbar-expand-lg fixed-top bg-light">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <i class="bi bi-chevron-left"></i>
-                    Iann Braga
-                    <i class="bi bi-chevron-right"></i>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="portfolio.html">Porfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="servicos.html">Serviços</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contatos">Contatos</a>
-                        </li>
-                    </ul>
-                </div>
+<body>
+    <nav class="nav navbar pt-4 m-0 fixed-top">
+        <div class="row w-100 p-0 m-0">
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 p-0 m-0">
+                <h3 class="text-center">Iann Braga</h3>
             </div>
-        </nav>
-    </header>
-    <!-- Fim -->
-
-    <main>
-        <!-- Mensagem inicial -->
-        <section id="hero">
-            <div class="px-4 py-5 text-center">
-                <i class="bi bi-code-slash d-block mx-auto mb-4" style="font-size: 7rem;"></i>
-                <h1 class="display-5 fw-bold">Desenvolvedor</h1>
-                <div class="col-lg-6 mx-auto">
-                    <p class="lead mb-4">Bem-vindo ao meu portfólio digital! Estudo Sistemas de Informação e sou
-                        apaixonado pela tecnologia e por isso dedico meu tempo a melhorar minhas habilidades. Estou
-                        ansioso para compartilhar minhas experiências e ajudar a transformar suas ideias em realidade.
-                    </p>
-                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                        <!-- 
-                        <a href="https://wa.me/+5563981457369" type="button"
-                        class="btn btn-outline-success btn-lg px-4 gap-3" target="_blank">
-                        <i class="bi bi-whatsapp m-1" style="color: inherit;"></i>
-                        Contato
-                        </a> 
-                        -->
-                        <!--                         
-                        <a href="#contatos" type="button" class="btn btn-outline-primary btn-lg px-4">Contatos</a>
-                        -->
-                    </div>
-                </div>
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 p-0 m-0">
+                <ul class="nav d-flex justify-content-center">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-light">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-light">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-light"></a>
+                    </li>
+                </ul>
             </div>
-        </section>
-        <!-- Fim -->
-
-        <!-- Sobre -->
-        <section id="sobre">
-            <div class="container px-4 py-5 bg-light">
-                <div class="row">
-                    <div class="col-sm-12 col-md-6">
-                        <div>
-                            <h2 class="mb-4" id="sobre">Sobre Mim</h2>
-                            <p>Meu nome é Iann!! Atulamente estou no 6º período do curso Sistemas de Informação na
-                                Universidade
-                                Estadual do Tocantins - UNITINS, no período matutino e a tarde atuo como estagiário de
-                                desenvolvimento na Agência de Tecnologia da Informação - ATI. </p>
-                            <h3 class="text-center">...</h3>
-                            <p>Durante a faculdade desenvolvi projetos principalmente a linguagem Java, de
-                                desenvolvimento
-                                web
-                                utilizando os frameworks Spring Boot e Quarkus, a desenvolvimento mobile utilizando
-                                Android
-                                Studio e Dart com o framework Flutter. Já no estágio fui apresentado a linguagem Ruby e
-                                o
-                                framework Ruby on Rails!</p>
-                            <h3 class="text-center">...</h3>
-                        </div>
-
-
-                    </div>
-                    <div class="col-sm-12 col-md-6 text-center">
-                        <ul class="list-unstyled">
-                            <li>
-                                <div class="container" style="width: 50%; height: 50%;">
-                                    <img src="assets/img/perfil.png" alt="" class="img-fluid rounded-circle">
-                                </div>
-                            </li>
-                            <li>
-                                <div class="social-icons mt-4 d-flex justify-content-center">
-                                    <a href="https://www.github.com/iannbraga/" class="me-3" target="_blank">
-                                        <i class="bi bi-github" style="font-size: 2rem; color: rgb(0, 0, 0);"></i>
-                                    </a>
-                                    <a href="https://www.instagram.com/" class="me-3" target="_blank">
-                                        <i class="bi bi-instagram"
-                                            style="font-size: 2rem; color: rgb(224, 37, 168);"></i>
-                                    </a>
-                                    <a href="https://www.linkedin.com/in/iann-braga-7b9b2b200/" class="me-3"
-                                        target="_blank">
-                                        <i class="bi bi-linkedin"
-                                            style="font-size: 2rem; color: rgb(41, 115, 252);"></i>
-                                    </a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Fim -->
-
-        <!-- Portfolio -->
-        <section id="portfolio">
-            <div class="container mt-5 mb-4" id="portfolio">
-                <h2 class="text-center py-5 border-top">Projetos recentes</h2>
-                <div class="row">
-                    <div class="col-sm-12 col-md-4 col-lg-4">
-                        <div class="mt-3 mb-5">
-                            <div class="card border-0">
-                                <div class="card-header border-0">
-                                    <img src="assets/img/template/template-1.png" class="card-img-top" alt="...">
-                                </div>
-
-                                <div class="card-body">
-                                    <ul class="list-unstyled list-inline d-flex justify-content-between">
-                                        <li class="list-inline-item">
-                                            <h5 class="card-title mb-0 mt-2">Projeto</h5>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a class="text-light" title="Github"
-                                                href="https://www.github.com/iannbraga/portfolio">
-                                                <i class="bi bi-github fs-4"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    <p><strong>Descrição:</strong> Lorem, ipsum dolor sit amet consectetur adipisicing
-                                        elit.</p>
-                                    <p>
-                                        <strong>Linguagens e Framework:</strong>
-                                    <ul class="list-unstyled d-flex justify-content-start text-center flex-wrap">
-                                        <li class="px-1">
-                                            <span class="badge html"><i
-                                                    class="devicon-html5-plain align-middle px-1"></i>HTML</span>
-                                        </li>
-                                        <li class="px-1">
-                                            <span class="badge css"><i
-                                                    class="devicon-css3-plain align-middle px-1"></i>CSS</span>
-                                        </li>
-                                        <li class="px-1">
-                                            <span class="badge js"><i
-                                                    class="devicon-javascript-plain align-middle px-1"></i>Js</span>
-                                        </li>
-                                        <li class="px-1">
-                                            <span class="badge bootstrap"><i
-                                                    class="devicon-bootstrap-plain align-middle px-1"></i>Bootstrap</span>
-                                        </li>
-                                    </ul>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4">
-                        <div class="mt-3 mb-5">
-                            <div class="card border-0">
-                                <div class="card-header border-0">
-                                    <img src="assets/img/template/template-2.png" class="card-img-top" alt="...">
-                                </div>
-
-                                <div class="card-body">
-                                    <ul class="list-unstyled list-inline d-flex justify-content-between">
-                                        <li class="list-inline-item">
-                                            <h5 class="card-title mb-0 mt-2">Projeto</h5>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a class="text-light" title="Github"
-                                                href="https://www.github.com/iannbraga/portfolio">
-                                                <i class="bi bi-github fs-4"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    <p><strong>Descrição:</strong> Lorem, ipsum dolor sit amet consectetur adipisicing
-                                        elit.</p>
-                                    <p>
-                                        <strong>Linguagens e Framework:</strong>
-                                    <ul class="list-unstyled d-flex justify-content-start text-center flex-wrap">
-                                        <li class="px-1">
-                                            <span class="badge html"><i
-                                                    class="devicon-html5-plain align-middle px-1"></i>HTML</span>
-                                        </li>
-                                        <li class="px-1">
-                                            <span class="badge css"><i
-                                                    class="devicon-css3-plain align-middle px-1"></i>CSS</span>
-                                        </li>
-                                        <li class="px-1">
-                                            <span class="badge js"><i
-                                                    class="devicon-javascript-plain align-middle px-1"></i>Js</span>
-                                        </li>
-                                        <li class="px-1">
-                                            <span class="badge bootstrap"><i
-                                                    class="devicon-bootstrap-plain align-middle px-1"></i>Bootstrap</span>
-                                        </li>
-                                    </ul>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4">
-                        <div class="mt-3 mb-5">
-                            <div class="card border-0">
-                                <div class="card-header border-0">
-                                    <img src="assets/img/template/template-3.png" class="card-img-top" alt="...">
-                                </div>
-
-                                <div class="card-body">
-                                    <ul class="list-unstyled list-inline d-flex justify-content-between">
-                                        <li class="list-inline-item">
-                                            <h5 class="card-title mb-0 mt-2">Projeto</h5>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a class="text-light" title="Github"
-                                                href="https://www.github.com/iannbraga/portfolio">
-                                                <i class="bi bi-github fs-4"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    <p><strong>Descrição:</strong> Lorem, ipsum dolor sit amet consectetur adipisicing
-                                        elit.</p>
-                                    <p>
-                                        <strong>Linguagens e Framework:</strong>
-                                    <ul class="list-unstyled d-flex justify-content-start text-center flex-wrap">
-                                        <li class="px-1">
-                                            <span class="badge html"><i
-                                                    class="devicon-html5-plain align-middle px-1"></i>HTML</span>
-                                        </li>
-                                        <li class="px-1">
-                                            <span class="badge css"><i
-                                                    class="devicon-css3-plain align-middle px-1"></i>CSS</span>
-                                        </li>
-                                        <li class="px-1">
-                                            <span class="badge js"><i
-                                                    class="devicon-javascript-plain align-middle px-1"></i>Js</span>
-                                        </li>
-                                        <li class="px-1">
-                                            <span class="badge bootstrap"><i
-                                                    class="devicon-bootstrap-plain align-middle px-1"></i>Bootstrap</span>
-                                        </li>
-                                    </ul>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Fim -->
-
-        <!-- Serviços -->
-        <section id="servicos">
-            <div class="container mt-5">
-                <div class="container px-0 py-5" id="hanging-icons">
-                    <h2 class="pb-2 border-bottom">Serviços</h2>
-                    <div class="row g-4 py-3 row-cols-1 row-cols-lg-3">
-                        <div class="col d-flex align-items-start">
-                            <div
-                                class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-                                <i class="bi bi-pc-display-horizontal" style="width: 1em; height: 1em;"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-body-emphasis">Manutenção de Computadores</h3>
-                                <p>Precisa resolver problemas de desempenho ou erros no seu computador? Oferecemos
-                                    formatação completa, removendo dados indesejados e instalando um sistema operacional
-                                    limpo. Deixe seu computador funcionar como novo novamente.</p>
-                                <a href="servicos.html" class="btn btn-outline-dark">
-                                    Sobre <i class="bi bi-box-arrow-up-right" style="font-size: small;"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col d-flex align-items-start">
-                            <div
-                                class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-                                <i class="bi bi-display" style="width: 1em; height: 1em;"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-body-emphasis">Sites de apresentação</h3>
-                                <p>
-                                    Precisa de um site elegante e funcional? Desenvolvemos sites estáticos
-                                    personalizados, com design responsivo e carregamento rápido. Tenha uma presença
-                                    online eficiente e de fácil manutenção.
-
-                                </p>
-                                <a href="servicos.html" class="btn btn-outline-dark">
-                                    Sobre <i class="bi bi-box-arrow-up-right" style="font-size: small;"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col d-flex align-items-start">
-                            <div
-                                class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-                                <i class="bi bi-display" style="width: 1em; height: 1em;"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-body-emphasis">Aplicações Empresariais</h3>
-                                <p>
-                                    Tem uma ideia para uma aplicação web? Transformamos sua ideia em realidade.
-                                    Desenvolvemos aplicações web escaláveis, seguras e de alto desempenho. Conte conosco
-                                    para criar sua solução personalizada.
-                                </p>
-                                <a href="servicos.html" class="btn btn-outline-dark">
-                                    Sobre <i class="bi bi-box-arrow-up-right" style="font-size: small;"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Fim -->
-
-        <!-- Contatos -->
-        <section id="contatos">
-            <div class="container text-center">
-                <h2>Contatos</h2>
-                <p>Entre em contato comigo através dos seguintes meios:</p>
-                <ul class="list-inline">
-                    <li class="list-inline-item">
-                        <a href="mailto:bragaprestes@gmail.com" target="_blank">
-                            <i class="bi bi-envelope-at" style="font-size: 2rem; color: rgb(255, 67, 67);"></i>
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 p-0 m-0">
+                <ul class="nav d-flex justify-content-center">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-light">
+                            <i class="bi bi-instagram"></i>
                         </a>
                     </li>
-                    <li class="list-inline-item">
-                        <a href="https://linkedin.com/in/iann-braga-7b9b2b200" target="_blank">
-                            <i class="bi bi-linkedin" style="font-size: 2rem;"></i>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-light">
+                            <i class="bi bi-whatsapp"></i>
                         </a>
                     </li>
-                    <li class="list-inline-item">
-                        <a href="https://www.github.com/iannbraga/" target="_blank">
-                            <i class="bi bi-github" style="font-size: 2rem; color: black"></i>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-light">
+                            <i class="bi bi-linkedin"></i>
                         </a>
                     </li>
-                    <li class="list-inline-item">
-                        <a href="https://wa.me/+5563981457369" target="_blank">
-                            <i class="bi bi-whatsapp" style="font-size: 2rem; color: green;"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://www.instagram.com/iann.braga_/" target="_blank">
-                            <i class="bi bi-instagram" style="font-size: 2rem; color: rgb(199, 50, 120);"></i>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-light">
+                            <i class="bi bi-github"></i>
                         </a>
                     </li>
                 </ul>
             </div>
-        </section>
-        <!-- Fim -->
-    </main>
+        </div>
+
+    </nav>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
-        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
-
-    <script src="assets/js/toggle.js"></script>
 </body>
 
 </html>
