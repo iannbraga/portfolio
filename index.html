@@ -1,70 +1,222 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR" data-bs-theme="dark">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfólio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iann Braga</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
-    <nav class="nav navbar pt-4 m-0 fixed-top">
-        <div class="row w-100 p-0 m-0">
-            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 p-0 m-0">
-                <h3 class="text-center">Iann Braga</h3>
-            </div>
-            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 p-0 m-0">
-                <ul class="nav d-flex justify-content-center">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link text-light">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link text-light">Projetos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link text-light"></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 p-0 m-0">
-                <ul class="nav d-flex justify-content-center">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link text-light">
-                            <i class="bi bi-instagram"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link text-light">
-                            <i class="bi bi-whatsapp"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link text-light">
-                            <i class="bi bi-linkedin"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link text-light">
-                            <i class="bi bi-github"></i>
-                        </a>
-                    </li>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Portfólio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">Sobre Mim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experiência</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Educação</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
                 </ul>
             </div>
         </div>
-
     </nav>
 
+    <!-- Hero Section -->
+    <section class="text-center py-5">
+        <div class="container">
+            <img src="img/bio.jpeg" class="rounded-circle" alt="Foto Profissional" width="150">
+            <h1 class="mt-3">Iann Braga</h1>
+            <p class="lead">Desenvolvedor Ruby on Rails</p>
+        </div>
+    </section>
 
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2>Sobre Mim</h2>
+            <p>Olá, meu nome é Iann Carlo Braga Nunes Prestes e sou um desenvolvedor de software apaixonado por
+                tecnologia e inovação. Atualmente, resido em Palmas, TO - Brasil, onde estou cursando Sistemas de
+                Informação na UNITINS.</p>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
+            <h2>Formação Acadêmica</h2>
+            <p>Durante minha graduação, adquiri uma sólida base teórica e prática em desenvolvimento de software,
+                aprimorando minhas habilidades em diversas linguagens de programação e frameworks. Minha experiência
+                acadêmica tem sido fundamental para minha formação como desenvolvedor, permitindo-me aplicar
+                conhecimentos em projetos reais e desafiadores.</p>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+            <h2>Experiência Profissional</h2>
+            <p>Minha trajetória profissional começou como estagiário na ATI - Agência de Tecnologia da Informação, onde
+                trabalhei no período vespertino, focando na manutenção de sistemas em Java com JSF e Ruby on Rails. Esta
+                experiência inicial me proporcionou uma compreensão profunda dos processos de desenvolvimento e
+                manutenção de sistemas complexos.</p>
+
+            <p>Atualmente, sou Desenvolvedor Júnior na NewCode - Fábrica de Software, onde trabalho no período diurno.
+                Minha principal responsabilidade é a manutenção de sistemas em Ruby on Rails, contribuindo para a
+                evolução e estabilidade de aplicações essenciais.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2>Habilidades</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Linguagens de Programação</h5>
+                    <ul>
+                        <li>Ruby (Médio)</li>
+                        <li>JavaScript (Básico)</li>
+                        <li>HTML (Médio)</li>
+                        <li>CSS (Básico)</li>
+                        <li>Java (Básico)</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Frameworks</h5>
+                    <ul>
+                        <li>Ruby on Rails (Médio)</li>
+                        <li>Bootstrap (Médio)</li>
+                        <li>jQuery (Básico)</li>
+                        <li>Hotwire (Turbo/Stimulus) (Iniciante)</li>
+                        <li>SpringBoot</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Ferramentas</h5>
+                    <ul>
+                        <li>Git</li>
+                        <li>Docker</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <!-- <section id="projects" class="py-5">
+        <div class="container">
+            <h2>Projetos</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="project1.jpg" class="card-img-top" alt="Projeto 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Nome do Projeto 1</h5>
+                            <p class="card-text">Descrição do projeto 1.</p>
+                            <a href="#" class="btn btn-primary">Ver Projeto</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="project2.jpg" class="card-img-top" alt="Projeto 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Nome do Projeto 2</h5>
+                            <p class="card-text">Descrição do projeto 2.</p>
+                            <a href="#" class="btn btn-primary">Ver Projeto</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="project3.jpg" class="card-img-top" alt="Projeto 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Nome do Projeto 3</h5>
+                            <p class="card-text">Descrição do projeto 3.</p>
+                            <a href="#" class="btn btn-primary">Ver Projeto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-5s">
+        <div class="container">
+            <h2>Experiência Profissional</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h5>ATI - Agência de Tecnologia da Informação</h5>
+                    <p>Estagiário</p>
+                    <p><small>01 de Jan 2023 à 01 de Jan 2024</small></p>
+                    <p>Manutenção de sistemas Java e JFS além de Ruby on Rails, contribuindo para estabilidade das
+                        aplicações.</p>
+                </div>
+                <hr>
+                <div class="timeline-item">
+                    <h5>NewCode</h5>
+                    <p>Desenvolvedor Júnior</p>
+                    <p><small>Atualmente</small></p>
+                    <p>Manutenção e implementação de sistemas Ruby on Rails, contribuindo para a evolução e estabilidade
+                        das aplicações.</p>
+                </div>
+                <hr>
+                <!-- Adicione mais experiências conforme necessário -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-5">
+        <div class="container">
+            <h2>Educação</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h5>Nome da Instituição</h5>
+                    <p>Curso</p>
+                    <p><small>Datas de Início e Término</small></p>
+                    <p>Principais realizações acadêmicas.</p>
+                </div>
+                <!-- Adicione mais instituições conforme necessário -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2>Contato</h2>
+            <p>Entre em contato através dos seguintes meios:</p>
+            <ul>
+                <li>Email: seu-email@example.com</li>
+                <li>LinkedIn: <a href="https://linkedin.com/in/seu-perfil">seu-perfil</a></li>
+                <li>GitHub: <a href="https://github.com/seu-usuario">seu-usuario</a></li>
+                <li>Site Pessoal: <a href="https://seu-site.com">seu-site.com</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <p class="col-md-6 mb-0 text-body-secondary text-start">© 2024 - Iann Braga</p>
+
+                <ul class="nav col-md-6 justify-content-end">
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+                </ul>
+            </footer>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoS7cF2yMG+S9G6XblR51B6mTZnv4ItEwBfF5hDeDgn2djQ"
         crossorigin="anonymous"></script>
 </body>
 
