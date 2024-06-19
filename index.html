@@ -319,7 +319,7 @@
                                 incidunt, ipsa nemo. Numquam quos ipsa illum.</p>
                         </div>
                         <div class="col-sm-1 col-md-4 col-lg-6 text-md-end">
-                            <img src="..." alt="" class="img-fluid" style="max-height: 15rem;">
+                            <img src="" alt="" class="img-fluid" style="max-height: 15rem;">
                         </div>
                     </div>
                 </div>
@@ -327,7 +327,7 @@
                 <div class="col-12 mt-5">
                     <div class="row">
                         <div class="col-sm-1 col-md-4 col-lg-6 text-md-start">
-                            <img src="..." alt="" class="img-fluid" style="max-height: 15rem;">
+                            <img src="" alt="" class="img-fluid" style="max-height: 15rem;">
                         </div>
                         <div class="col text-md-start">
                             <h5>ATI - Agência de Tecnologia da Informação</h5>
@@ -374,7 +374,7 @@
                                 Angular e Vue.</p>
                         </div>
                         <div class="col-sm-1 col-md-4 col-lg-6 text-md-start">
-                            <img src="..." alt="" class="img-fluid" style="max-height: 15rem;">
+                            <img src="" alt="" class="img-fluid" style="max-height: 15rem;">
                         </div>
                     </div>
                 </div>
@@ -382,7 +382,7 @@
                 <div class="col-12 mt-5">
                     <div class="row">
                         <div class="col-sm-1 col-md-4 col-lg-6 text-md-start">
-                            <img src="..." alt="" class="img-fluid" style="max-height: 15rem;">
+                            <img src="" alt="" class="img-fluid" style="max-height: 15rem;">
                         </div>
                         <div class="col text-md-start">
                             <h5>COLÉGIO DA POLÍCIA MILITAR - CPM</h5>
@@ -426,25 +426,26 @@
                 <div class="col-12">
                     <!-- Formulário WhatsApp -->
                     <div id="form-whatsapp" class="form-group mt-4" style="display: block;">
-                        <form>
+                        <form id="formWhatsapp">
                             <div class="mb-3">
                                 <label for="inputAssuntoWhatsapp" class="form-label">Assunto</label>
                                 <input type="text" class="form-control" id="inputAssuntoWhatsapp" placeholder="Assunto">
                             </div>
 
                             <div class="mb-3">
-                                <label for="inputMessageWhatsapp" class="form-label">Messagem</label>
-                                <textarea name="" id="" class="form-control" type="text" class="form-control" id="inputMessageWhatsapp"
-                                placeholder="Messagem" style="min-height: 200px;"></textarea>
+                                <label for="inputMessageWhatsapp" class="form-label">Mensagem</label>
+                                <textarea class="form-control" id="inputMessageWhatsapp" rows="3"
+                                    placeholder="Mensagem"></textarea>
                             </div>
 
-                            <a type="submit" id="enviarWhatsapp" class="btn btn-primary">Enviar via WhatsApp</a>
+                            <button type="button" class="btn btn-primary" onclick="enviarWhatsapp()">Enviar via
+                                WhatsApp</button>
                         </form>
                     </div>
 
                     <!-- Formulário Gmail -->
                     <div id="form-gmail" class="form-group mt-4" style="display: none;">
-                        <form>
+                        <form id="formGmail">
                             <div class="mb-3">
                                 <label for="inputEmail" class="form-label">Seu Email</label>
                                 <input type="email" class="form-control" id="inputEmail" placeholder="Seu email">
@@ -454,19 +455,21 @@
                                 <input type="text" class="form-control" id="inputSubject"
                                     placeholder="Assunto da mensagem">
                             </div>
-                            <button type="submit" class="btn btn-primary">Enviar via Gmail</button>
+                            <button type="button" class="btn btn-primary" onclick="enviarGmail()">Enviar via
+                                Gmail</button>
                         </form>
                     </div>
 
                     <!-- Formulário Telegram -->
                     <div id="form-telegram" class="form-group mt-4" style="display: none;">
-                        <form>
+                        <form id="formTelegram">
                             <div class="mb-3">
                                 <label for="inputTelegram" class="form-label">Nome de Usuário</label>
                                 <input type="text" class="form-control" id="inputTelegram"
                                     placeholder="Seu nome de usuário no Telegram">
                             </div>
-                            <button type="submit" class="btn btn-primary">Enviar via Telegram</button>
+                            <button type="button" class="btn btn-primary" onclick="enviarTelegram()">Enviar via
+                                Telegram</button>
                         </form>
                     </div>
                 </div>
@@ -516,7 +519,60 @@
             }
         }
 
-        function enviarWhatsapp(){
+        function enviarWhatsapp() {
+            // Capturar dados do formulário de WhatsApp
+            var assunto = document.getElementById('inputAssuntoWhatsapp').value;
+            var mensagem = document.getElementById('inputMessageWhatsapp').value;
+
+            // Formatar a mensagem para o link do WhatsApp
+            var mensagemFormatada = ("**" + assunto +"**" + " \n" + mensagem);
+
+            // Link para enviar a mensagem via WhatsApp
+            var linkWhatsapp = "https://wa.me/+5563981457369?text=" + mensagemFormatada;
+
+            // Abrir a URL do WhatsApp
+            window.open(linkWhatsapp);
+        }
+
+        function enviarGmail() {
+            // Capturar dados do formulário de Gmail
+            var email = document.getElementById('inputEmail').value;
+            var assunto = document.getElementById('inputSubject').value;
+
+            // Formatar a mensagem de email
+            var mensagem = "mailto:" + email + "?subject=" + assunto;
+
+            // Abrir o cliente de email padrão
+            window.open(mensagem);
+        }
+
+        function enviarTelegram() {
+            // Capturar nome de usuário do Telegram
+            var username = document.getElementById('inputTelegram').value;
+
+            // Link para enviar mensagem via Telegram
+            var linkTelegram = "https://t.me/" + username;
+
+            // Abrir a URL do Telegram
+            window.open(linkTelegram);
+        }
+    </script>
+    <!-- <script>
+        function showForm(type) {
+            // Esconde todos os formulários
+            document.querySelectorAll('.form-group').forEach(form => form.style.display = 'none');
+
+            // Mostra o formulário correto baseado no tipo
+            if (type === 'whatsapp') {
+                document.getElementById('form-whatsapp').style.display = 'block';
+            } else if (type === 'gmail') {
+                document.getElementById('form-gmail').style.display = 'block';
+            } else if (type === 'telegram') {
+                document.getElementById('form-telegram').style.display = 'block';
+            }
+        }
+
+        function enviarWhatsapp() {
             // Pegar o assunto e  mensagem
             // Formatar o assunto com o estilo do whatsapp:
             // **assunto**
@@ -525,7 +581,7 @@
             // E realizar o envio
         }
 
-    </script>
+    </script> -->
 </body>
 
 </html>
